@@ -1,0 +1,143 @@
+body{
+    margin: 0%;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: lighter;
+}
+
+
+/*header*/
+.head{
+    background-color: #2980B9;
+    padding: 20px;
+    color: white;
+}
+
+#logo{
+    width: 200px;
+    aspect-ratio: auto;
+}
+#header{
+    float: right;
+}
+
+
+/*Box1*/
+.container1{
+    width: 100%;
+    min-height: 19vh;
+    background: rgb(236, 240, 241);
+    display: flex;
+}
+
+.log1{
+    border-style: inset;
+    border: 5px solid #d2d6de;
+    border-left-color: #3c8dbc;
+    position: relative;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 90%;
+    background-color: #ffffff;
+    display: block;
+}
+
+.log2{
+    border-style: inset;
+    border: 5px solid #d2d6de;
+    border-left-color: #00a65a;
+    position: relative;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 90%;
+    background-color: #ffffff;
+    display: block;
+    height: 100%;
+}
+
+.logintro{
+    padding-left: 5px;
+}
+
+
+/* login button*/
+.log{
+    border-top: 1px solid #f4f4f4;
+    padding: 10px;
+}
+
+.logbtn{
+    border: none;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    border-radius: 100px;
+    font-size: 15px;
+    background: #f39c12;
+    color: #fff;
+    position: relative;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.logbtn::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: scaleX(0);
+    width: 100%;
+    height: 100%;
+    background: #ffffff55;
+    border-radius: 100px;
+}
+
+.logbtn:active::before{
+    animation: ripple 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes ripple {
+    to{
+        transform: scale(1);
+    }    
+}
+
+
+/*box 2*/
+.container2{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(236, 240, 241);
+    display: flex;
+}
+
+.spot{
+    border-style: inset;
+    border: 5px solid #d2d6de;
+    border-left-color:#ff0000a8;
+    position: relative;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 100%;
+    background-color: #ffffff;
+    display: block;
+    height: 100%;
+}
+
+#noti{
+    text-align: center;
+}
+
+.news{
+    border-top: 2px solid #f4f4f4;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
