@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Admin Login</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-32x32.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/login3.css">
+        <script src="login.js"></script>
+        
+    </head>
+    <body onload="createCaptcha()">
+        <div class="container" >
+            
+            <div class="navbar">
+                <form action="/">
+                    <a href="/"><img src="assets/vitlogo.png" alt="vit photo" id="logo"></a>
+                </form>
+                <h1 id="header">VFORUM</h1>
+            </div>
+            <div class="log">
+                <h2 id="wel" >Login</h2>
+                <form action="/loginadmin" method="post">
+                    <div class = "inp">
+                        <input type="text" id="username" name="username" autocapitalize="oninput" autocomplete="off" placeholder="Username">
+                        <br>
+                        <input type="password" id="password" name="password" value="" required placeholder="Password">
+                        <br>
+                        <div class="sopas">
+                            <input type="checkbox" onclick="myFunction()" id="sopas" placeholder="Show Password">
+                            <label style="color: white;">Show Password</label> 
+                        </div>
+                    </div>
+                    <div class="capbox">
+                        <div id="captcha">
+                        </div>
+                        <input type="text" placeholder="Captcha" id="captchaTextBox" autocomplete="off">
+                    </div>
+                    <div class="lgbt">
+                        <button class="btn" type="submit" value="submit">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("password");
+              if (x.type === "password") {
+                x.type = "text";
+              } else {
+                x.type = "password";
+              }
+            }
+               
+        </script>
+    </body>
+</html>

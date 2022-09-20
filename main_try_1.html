@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Club Forum</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-32x32.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/main.css">
+        <script src="login.js"></script>
+        <script type="text/javascript">
+            function preback(){
+                window.history.forward();
+            }
+            setTimeout(preback(), 0);
+            window.onunload = function(){null};
+        </script>
+    </head>
+    <body>
+        <div class="head">
+            <img src="assets/vitlogo.png" alt="vit photo" id="logo">
+            <h1 id="header">VFORUM</h1>
+        </div>
+        <div class="container1">
+            
+            <div class="log1">
+                <div class ="logintro">
+                    <h2>Login For Students</h2>
+                    <div class="log">
+                        <form action="/login">
+                        <button class="logbtn" type="submit" value="sub">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="log2">
+                <div class ="logintro">
+                    <h2>Login For Admin and Faculties</h2>
+                    <div class="log">
+                        <form action="/loginadmin">
+                        <button class="logbtn" type="submit" value="sub">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container2">
+            <div class="spot">
+                <h2 id="noti">Notifications</h2>
+                <div class="news">
+                    <ul>
+                    <li id="spt1">A</li>
+                    <li id="spt2">A</li>
+                    <li id="spt3">A</li>
+                    <li id="spt4">A</li>
+                    <li id="spt5">A</li>
+                    <li id="spt6">A</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+

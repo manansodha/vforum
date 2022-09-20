@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main Page</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-32x32.png">
+        <link rel="stylesheet" href="assets/mainwp3.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="login.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav">
+                <form action="/mainwp3">
+                    <a href="mainwp3"><img src="assets/vitlogo.png" alt="vit photo" id="logo"></a>
+                </form>
+                <h1 id="header">Vforum</h1>
+            </div>
+            <div class="main">
+                <div id="mySidenav" class="sidenav">
+                    <form action="/myinfo">
+                    <a href="myinfo" id="myin" onmouseenter="style.color='white'" onmouseleave="style.color='#04AA6D'">My Information</a>
+                    </form>
+                    <form action="/clubinfo">
+                    <a href="clubinfo" id="clin" onmouseenter="style.color='white'" onmouseleave="style.color='#2196F3'" type="submit">Club Information</a>
+                    </form>
+                    <form action="">
+                    <a href="#" id="clfo" onmouseenter="style.color='white'" onmouseleave="style.color='#f44336'">Club Forums</a>
+                    </form>
+                    <form action="/logout">
+                    <a href="/" id="lgout" onmouseenter="style.color='white'" onmouseleave="style.color='#ceb70b'">Log Out</a>
+                    </form>
+                </div>
+                <div class="spot">
+                    <div class="noti">
+                        <h2 id="notiname">Notifications</h2>
+                    </div>
+                        <ul id="notificaiton">
+                            <li>Hello</li>
+                            <li>Welcome</li>
+                            <li>This is Vforum</li>
+                    
+                        </ul>
+                    
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

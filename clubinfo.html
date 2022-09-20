@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Technical Clubs</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/clubinfo.css">
+        <script src="assets/info.js"></script>
+        <script src="login.js"></script>
+    </head>
+
+    <body onload="info()">
+        <div class="container">
+            <div class="navbar">
+                <form action="/mainwp3">
+                <a href="mainwp3"><img src="assets/vitlogo.png" alt="vit photo" id="logo"></a>
+                </form>
+                <h1 id="header">Clubs@VITB</h1>
+            </div>
+            
+            <div class="club-title">
+                <form action="/non-tech">
+                <button id="side-btn" value="Submit" type="submit">Non-technical Clubs</button>
+                </form>
+                Technical Clubs
+                <form action = '/lang'>
+                <button id="side-btn1" value="Submit" type="submit">Language Clubs</button>
+                </form>
+            </div>
+            
+            <table>
+                <tbody id="tech-club">   
+                </tbody>  
+            </table>  
+            
+        </div>
+    </body>
+</html>
